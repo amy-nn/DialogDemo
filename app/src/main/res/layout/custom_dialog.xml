@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出当前帐号"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:layout_marginTop="35dp" />
+
+    <LinearLayout
+        android:id="@+id/liner_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/txt_title"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:id="@+id/txt_message1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="    再连接登陆15天，就可变"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/txt_message2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_message1"
+            android:text="为QQ达人。退出QQ可能会使"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/txt_message3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_message2"
+            android:text="你现有记录归零，确定退出？"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_below="@id/liner_message"
+        android:layout_marginTop="20dp"></View>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_below="@id/view_1"
+        android:layout_centerInParent="true"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/liner_message"
+        android:layout_marginTop="30sp">
+        <TextView
+            android:id="@+id/txt_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="@android:color/holo_blue_light"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@android:color/holo_blue_dark"></View>
+        <TextView
+            android:id="@+id/txt_yes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确认退出"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    
+</RelativeLayout>

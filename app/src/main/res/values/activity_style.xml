@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="dialog_style" parent="@style/AppTheme">
+        <!--是否悬浮在activity上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:title">"activity dialog"</item>
+        <item name="android:dialogTitle">"对话框标题"</item>
+    </style>
+</resources>
